@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="kn">
+<head>
+    <meta charset="UTF-8">
+    <title>ಗ್ರೀನ್ ಸೀಡ್ಸ್</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header>
+    <h1>ಗ್ರೀನ್ ಸೀಡ್ಸ್ ಸ್ಟೋರ್</h1>
+    <nav>
+        <a href="#">ಮುಖಪುಟ</a>
+        <a href="#">ಬೀಜಗಳು</a>
+        <a href="#">ನಮ್ಮ ಬಗ್ಗೆ</a>
+        <a href="#">ಸಂಪರ್ಕ</a>
+    </nav>
+</header>
+
+<section class="hero">
+    <h2>ನಿಮ್ಮ ತೋಟವನ್ನು ಬೆಳೆಸಿರಿ</h2>
+    <p>ಉತ್ತಮ ಗುಣಮಟ್ಟದ ಬೀಜಗಳು ಇಲ್ಲಿ ಲಭ್ಯ</p>
+</section>
+
+<section class="products">
+    <h2>ನಮ್ಮ ಬೀಜಗಳು</h2>
+
+    <div class="card">
+        <h3>ಟೊಮೇಟೊ ಬೀಜ</h3>
+        <p>ಹೆಚ್ಚು ಉತ್ಪಾದನೆ</p>
+    </div>
+
+    <div class="card">
+        <h3>ಕ್ಯಾರೆಟ್ ಬೀಜ</h3>
+        <p>ಬೆಳೆಯಲು ಸುಲಭ</p>
+    </div>
+
+    <div class="card">
+        <h3>ಸೂರ್ಯಕಾಂತಿ ಬೀಜ</h3>
+        <p>ಸುಂದರ ಹೂಗಳು</p>
+    </div>
+</section>
+
+<footer>
+    <p>© 2025 ಗ್ರೀನ್ ಸೀಡ್ಸ್</p>
+</footer>
+
+</body>
+</html>
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #f1f8e9;
+}
+
+header {
+    background-color: #2e7d32;
+    color: white;
+    padding: 15px;
+}
+
+nav a {
+    color: white;
+    margin-right: 15px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.hero {
+    background-color: #a5d6a7;
+    text-align: center;
+    padding: 40px;
+}
+
+.products {
+    padding: 20px;
+    text-align: center;
+}
+
+.card {
+    background: white;
+    border: 1px solid #ccc;
+    padding: 15px;
+    margin: 10px;
+    display: inline-block;
+    width: 200px;
+    border-radius: 5px;
+}
+
+footer {
+    background-color: #2e7d32;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+<!DOCTYPE html>
+<html lang="kn">
+<head>
+    <meta charset="UTF-8">
+    <title>ಸಂಪರ್ಕಿಸಿ</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header>
+    <h1>ಗ್ರೀನ್ ಸೀಡ್ಸ್</h1>
+    <nav>
+        <a href="index.html">ಮುಖಪುಟ</a>
+        <a href="contact.html">ಸಂಪರ್ಕ</a>
+    </nav>
+</header>
+
+<section class="contact">
+    <h2>ನಮ್ಮನ್ನು ಸಂಪರ್ಕಿಸಿ</h2>
+
+    <form onsubmit="sendMessage(); return false;">
+        <input type="text" id="name" placeholder="ನಿಮ್ಮ ಹೆಸರು" required>
+        <input type="email" id="email" placeholder="ಇಮೇಲ್" required>
+        <textarea id="message" placeholder="ನಿಮ್ಮ ಸಂದೇಶ" required></textarea>
+        <button type="submit">ಕಳುಹಿಸಿ</button>
+    </form>
+
+    <p id="successMsg"></p>
+</section>
+
+<script src="script.js"></script>
+
+</body>
+</html>
+.contact {
+    padding: 30px;
+    text-align: center;
+}
+
+form input, form textarea {
+    width: 80%;
+    padding: 10px;
+    margin: 10px 0;
+}
+
+button {
+    background-color: #2e7d32;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+function sendMessage() {
+    document.getElementById("successMsg").innerText =
+        "ಧನ್ಯವಾದಗಳು! ನಿಮ್ಮ ಸಂದೇಶ ಕಳುಹಿಸಲಾಗಿದೆ 🌱";
+}
+<section class="products">
+    <h2>ನಮ್ಮ ಬೀಜಗಳು</h2>
+
+    <div class="card">
+        <h3>ಟೊಮೇಟೊ ಬೀಜ</h3>
+        <p>₹50</p>
+        <button onclick="addToCart('ಟೊಮೇಟೊ ಬೀಜ', 50)">ಕಾರ್ಟ್‌ಗೆ ಸೇರಿಸಿ</button>
+    </div>
+
+    <div class="card">
+        <h3>ಕ್ಯಾರೆಟ್ ಬೀಜ</h3>
+        <p>₹40</p>
+        <button onclick="addToCart('ಕ್ಯಾರೆಟ್ ಬೀಜ', 40)">ಕಾರ್ಟ್‌ಗೆ ಸೇರಿಸಿ</button>
+    </div>
+
+    <div class="card">
+        <h3>ಸೂರ್ಯಕಾಂತಿ ಬೀಜ</h3>
+        <p>₹30</p>
+        <button onclick="addToCart('ಸೂರ್ಯಕಾಂತಿ ಬೀಜ', 30)">ಕಾರ್ಟ್‌ಗೆ ಸೇರಿಸಿ</button>
+    </div>
+</section>
+
+<h3 style="text-align:center">🛒 ನಿಮ್ಮ ಕಾರ್ಟ್</h3>
+<ul id="cart" style="text-align:center"></ul>
+<p style="text-align:center" id="total"></p>
+
+<script src="cart.js"></script>
+let total = 0;
+
+function addToCart(name, price) {
+    const cart = document.getElementById("cart");
+    const item = document.createElement("li");
+
+    item.innerText = name + " - ₹" + price;
+    cart.appendChild(item);
+
+    total += price;
+    document.getElementById("total").innerText =
+        "ಒಟ್ಟು ಮೊತ್ತ: ₹" + total;
+}
+button {
+    background-color: #388e3c;
+    color: white;
+    padding: 8px 15px;
+    border: none;
+    border-radius: 4px;
+}
+<div class="card">
+    <h3>ಸೊಯಾಬೀನ್ ಬೀಜ</h3>
+    <p>₹60</p>
+    <button onclick="addToCart('ಸೊಯಾಬೀನ್ ಬೀಜ', 60)">ಕಾರ್ಟ್‌ಗೆ ಸೇರಿಸಿ</button>
+</div>
+
+<div class="card">
+    <h3>ಗೋವಿನ ಜೋಳ ಬೀಜ</h3>
+    <p>₹45</p>
+    <button onclick="addToCart('ಗೋವಿನ ಜೋಳ ಬೀಜ', 45)">ಕಾರ್ಟ್‌ಗೆ ಸೇರಿಸಿ</button>
+</div>
+<div class="card">
+    <h3>ಸೊಯಾಬೀನ್ ಬೀಜ</h3>
+    <p>₹60</p>
+
+    <input type="number" id="qty-soya" value="1" min="1">
+
+    <button onclick="addToCartQty('ಸೊಯಾಬೀನ್ ಬೀಜ', 60, 'qty-soya')">
+        ಕಾರ್ಟ್‌ಗೆ ಸೇರಿಸಿ
+    </button>
+</div>
+
+<div class="card">
+    <h3>ಗೋವಿನ ಜೋಳ ಬೀಜ</h3>
+    <p>₹45</p>
+
+    <input type="number" id="qty-jola" value="1" min="1">
+
+    <button onclick="addToCartQty('ಗೋವಿನ ಜೋಳ ಬೀಜ', 45, 'qty-jola')">
+        ಕಾರ್ಟ್‌ಗೆ ಸೇರಿಸಿ
+    </button>
+</div>
+let total = 0;
+
+function addToCartQty(name, price, qtyId) {
+    const qty = document.getElementById(qtyId).value;
+    const cart = document.getElementById("cart");
+
+    const item = document.createElement("li");
+    const itemTotal = price * qty;
+
+    item.innerText =
+        name + " | Qty: " + qty + " | ₹" + itemTotal;
+
+    cart.appendChild(item);
+
+    total += itemTotal;
+    document.getElementById("total").innerText =
+        "ಒಟ್ಟು ಮೊತ್ತ: ₹" + total;
+}
+input[type="number"] {
+    width: 60px;
+    padding: 5px;
+    margin-bottom: 8px;
+}
+<!DOCTYPE html>
+<html lang="kn">
+<head>
+<meta charset="UTF-8">
+<title>Checkout</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<h2>ಆರ್ಡರ್ ವಿವರ</h2>
+
+<form onsubmit="orderConfirm(); return false;">
+    <input type="text" placeholder="ನಿಮ್ಮ ಹೆಸರು" required>
+    <input type="tel" placeholder="ಮೊಬೈಲ್ ನಂಬರ್" required>
+    <textarea placeholder="ವಿಳಾಸ" required></textarea>
+    <button type="submit">ಆರ್ಡರ್ ದೃಢೀಕರಿಸಿ</button>
+</form>
+
+<p id="msg"></p>
+
+<script>
+function orderConfirm(){
+ document.getElementById("msg").innerText =
+ "✅ ನಿಮ್ಮ ಆರ್ಡರ್ ಸ್ವೀಕರಿಸಲಾಗಿದೆ";
+}
+</script>
+
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="kn">
+<head>
+<meta charset="UTF-8">
+<title>Login</title>
+</head>
+<body>
+
+<h2>ಲಾಗಿನ್</h2>
+
+<input type="text" placeholder="Username">
+<input type="password" placeholder="Password">
+<button>Login</button>
+
+<h3>ಅಥವಾ Register</h3>
+<input type="text" placeholder="New Username">
+<input type="password" placeholder="New Password">
+<button>Register</button>
+
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="kn">
+<head>
+<meta charset="UTF-8">
+<title>Admin Panel</title>
+</head>
+<body>
+
+<h2>Admin – ಬೀಜ ಸೇರಿಸಿ</h2>
+
+<input type="text" placeholder="ಬೀಜ ಹೆಸರು">
+<input type="number" placeholder="ಬೆಲೆ">
+<button>Add Seed</button>
+
+<p>⚠️ Demo only</p>
+
+</body>
+</html>
+@media (max-width: 600px) {
+  .card {
+    width: 90%;
+  }
+
+  nav a {
+    display: block;
+    margin: 10px 0;
+  }
+
+  input, textarea, button {
+    width: 90%;
+  }
+}
+<!DOCTYPE html>
+<html lang="kn">
+<head>
+<meta charset="UTF-8">
+<title>Payment</title>
+</head>
+<body>
+
+<h2>ಪಾವತಿ ಆಯ್ಕೆಮಾಡಿ</h2>
+
+<button onclick="pay()">📱 GPay / PhonePe</button>
+
+<p id="paymsg"></p>
+
+<script>
+function pay(){
+ document.getElementById("paymsg").innerText =
+ "✅ ಪಾವತಿ ಯಶಸ್ವಿಯಾಗಿದೆ (Demo)";
+}
+</script>
+
+</body>
+</html>
+function changeLang(lang){
+ if(lang === 'en'){
+   document.getElementById("title").innerText = "Green Seeds Store";
+ } else {
+   document.getElementById("title").innerText = "ಗ್ರೀನ್ ಸೀಡ್ಸ್ ಸ್ಟೋರ್";
+ }
+}
+<button onclick="changeLang('kn')">ಕನ್ನಡ</button>
+<button onclick="changeLang('en')">English</button>
+
+<h1 id="title">ಗ್ರೀನ್ ಸೀಡ್ಸ್ ಸ್ಟೋರ್</h1>
+
+<?php
+$conn = mysqli_connect("localhost","root","","seeds_db");
+?>
+<?php
+include 'db.php';
+$name = $_POST['name'];
+$phone = $_POST['phone'];
+
+mysqli_query($conn,
+"INSERT INTO orders(name, phone)
+ VALUES('$name','$phone')");
+
+echo "Order Saved";
+?>
+/seeds-website
+│
+├── index.html
+├── cart.js
+├── styles.css
+├── checkout.html
+├── payment.html
+├── login.html
+├── admin.html
+│
+├── backend/
+│   ├── db.php
+│   ├── save_order.php
+│   └── admin_login.php
+
+seeds-shop/
+├── index.php
+├── cart.php
+├── checkout.php
+├── payment.php
+├── login.php
+├── register.php
+├── admin/
+│   ├── dashboard.php
+│   ├── add-seed.php
+│   └── orders.php
+├── backend/
+│   ├── db.php
+│   ├── login.php
+│   ├── order_save.php
+│   └── add_seed.php
